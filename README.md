@@ -1,4 +1,5 @@
 #**Database connection string** in .\appsettings.json file "DevConnection" --> connecting to local database with Trusted connection
+
 #**Client appliation Port used:** 4200 
 
 # MovePara
