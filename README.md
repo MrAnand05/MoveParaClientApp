@@ -1,11 +1,13 @@
 # TODO
-HTML: 
+HTML:
+
 TODO: Use font-awosome, 
 TODO: Change table to list    
 TODO: Use component for list 
 TODO: Move styling to .css
 
 Component.TS:
+
 TODO: Delete commented code
 
 Service class:
