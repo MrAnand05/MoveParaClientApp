@@ -1,3 +1,27 @@
+# TODO
+HTML:
+
+TODO: Use font-awosome, 
+TODO: Change table to list    
+TODO: Use component for list 
+TODO: Move styling to .css
+
+Component.TS:
+
+TODO: Delete commented code
+
+Service class:
+
+TODO: remove toPromise
+TODO: Remove console.log
+TODO: Use observable instead of variable.
+TODO: remove toPromise
+TODO: Look to remove null parameter
+
+#**Database connection string** in .\appsettings.json file "DevConnection" --> connecting to local database with Trusted connection
+
+#**Client appliation Port used:** 4200 
+
 # MovePara
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.2.
