@@ -1,0 +1,41 @@
+<div class="container">
+    <div class="ui card">
+        <div class="jumbotron py-2">
+            <h1 class="display-6 text-center">
+                Move Paragraph
+            </h1>
+        </div>
+         <div class="grid-container">
+            <div >
+                <app-para-list [listSide]="Right" [paraList] = "service.paraLeft"></app-para-list>
+            </div>
+            
+            <div >
+                <div class="buttonContainer">
+                <button (click)="service.move('right')" ><fa-icon [icon]="faArrowRight" size="2x" [border]="true" [fixedWidth]="true" 
+                    [styles]="{'stroke': 'black', 'color': 'black'}" ></fa-icon>
+                </button>  
+                </div>
+                <div class="buttonContainer">
+                <button (click)="service.move( 'left')"><fa-icon [icon]="faArrowLeft" size="2x" [border]="true" [fixedWidth]="true" 
+                    [styles]="{'stroke': 'black', 'color': 'black'}" ></fa-icon>
+                </button>
+                </div>
+            </div>
+            <div >
+                <app-para-list [listSide]="Left" [paraList] = "service.paraRight"></app-para-list>
+            </div>
+            
+         </div>
+
+         <div class="buttonContainer">
+            <button class="buttonContainer" (click)="fillContainer()">
+              OK
+            </button>
+          </div>
+          <div class="childcontainer">
+            <textarea class="list">{{containerString}}</textarea> 
+          </div>
+
+    </div>
+</div>

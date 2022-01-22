@@ -1,0 +1,7 @@
+<ul class="list">
+    <li *ngFor="let t of paraList" [ngClass]="{'li-item-selected': t===service.selectedPara}" 
+    (click)="onSelect(t, listSide)" (dblclick)= "service.move(listSide)">
+      {{t.paraId}}
+      
+    </li>
+  </ul>
