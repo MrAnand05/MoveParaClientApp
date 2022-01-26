@@ -12,13 +12,13 @@
             
             <div >
                 <div class="buttonContainer">
-                <button (click)="service.move('right')" ><fa-icon [icon]="faArrowRight" size="2x" [border]="true" [fixedWidth]="true" 
-                    [styles]="{'stroke': 'black', 'color': 'black'}" ></fa-icon>
+                <button (click)="service.move('right')" class="btn btn-primary" ><fa-icon [icon]="faArrowRight" size="2x" [fixedWidth]="true" 
+                    [styles]="{ 'color': 'black'}" ></fa-icon>
                 </button>  
                 </div>
                 <div class="buttonContainer">
-                <button (click)="service.move( 'left')"><fa-icon [icon]="faArrowLeft" size="2x" [border]="true" [fixedWidth]="true" 
-                    [styles]="{'stroke': 'black', 'color': 'black'}" ></fa-icon>
+                <button (click)="service.move( 'left')" class="btn btn-primary"><fa-icon [icon]="faArrowLeft" size="2x" [fixedWidth]="true" 
+                    [styles]="{'color': 'black'}" ></fa-icon>
                 </button>
                 </div>
             </div>
@@ -29,12 +29,14 @@
          </div>
 
          <div class="buttonContainer">
-            <button class="buttonContainer" (click)="fillContainer()">
+            <button class="buttonContainer btn btn-secondary"  (click)="fillContainer()">
               OK
             </button>
           </div>
           <div class="childcontainer">
-            <textarea class="list">{{containerString}}</textarea> 
+              <!-- Use observable -->
+            <!-- <textarea class="list">{{containerString$ | async}}</textarea>  -->
+            <textarea class="list">{{containerString }}</textarea> 
           </div>
 
     </div>

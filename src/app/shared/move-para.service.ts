@@ -2,7 +2,8 @@ import { Injectable } from '@angular/core';
 import {HttpClient, HttpParams, HttpHeaders} from '@angular/common/http'
 import { MovePara, ParaDesc } from './move-para.model';
 import { environment } from './../../environments/environment';
-
+//TODO: Use observable or .Then insted of nested move function.
+//TOD: Move function in component.
 @Injectable({
   providedIn: 'root'
 })
@@ -30,7 +31,7 @@ public getParaRight() {
 
 getParaRightDesc(){
   var ParasRightDesc="ParaRights/Desc";
-  
+  //TODO: Description instead of Desc
   return this.http.get(`${this.baseUrl}/${ParasRightDesc}`,{responseType:"text"} );
 
 }

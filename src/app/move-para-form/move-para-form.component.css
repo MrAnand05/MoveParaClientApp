@@ -11,6 +11,7 @@
   grid-gap: 20px;
 }
 .buttonContainer{
+  width: 4.5rem;
   padding: 1rem;
   text-align: center;
   margin: 0 auto;
