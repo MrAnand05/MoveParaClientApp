@@ -3,6 +3,7 @@ import { MovePara } from '../shared/move-para.model';
 import { MoveParaService } from '../shared/move-para.service';
 import {faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
+//TODO: Remove okCLick function .
 @Component({
   selector: 'app-move-para-form',
   templateUrl: './move-para-form.component.html',
@@ -22,6 +23,7 @@ export class MoveParaFormComponent implements OnInit {
   Left:string="left";
   Right:string="right";
   containerString:any;
+  //public bodyText$: Observable<string> | undefined;
 
 
 onSelectL(para: MovePara): void {
@@ -36,6 +38,7 @@ onSelectR(para: MovePara): void {
   }
 
   fillContainer(){
+    //this.bodyText$=this.service.paraRightDesc()
     
     this.service.getParaRightDesc().subscribe(res=>this.containerString=res.toString());
   }
