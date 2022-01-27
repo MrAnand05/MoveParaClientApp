@@ -29,7 +29,7 @@
          </div>
 
          <div class="buttonContainer">
-            <button class="buttonContainer btn btn-secondary"  (click)="fillContainer()">
+            <button class="buttonContainer btn  btn-lg" [class]=" this.service.btnColor=='true' ? 'btn-danger':'btn-primary'"  (click)="fillContainer()">
               OK
             </button>
           </div>

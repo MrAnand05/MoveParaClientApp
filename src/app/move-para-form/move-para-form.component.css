@@ -18,6 +18,20 @@
   
 }
 
+/* .btnColorfeatureFlag{
+  background-color: var(--);
+  color: black;
+} */
+.blueButton{
+  background-color: blue;
+  color: white;
+}
+
+.redButton{
+  background-color: red;
+  color: white;
+}
+
 .list {
   padding: 1rem;
   width: 100%;

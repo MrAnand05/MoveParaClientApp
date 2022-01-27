@@ -16,6 +16,7 @@ listSide:string;
 paraLeft:any;
 paraRight:any;
 paraRightDesc:any;
+btnColor:any;
 readonly baseUrl=environment.baseUrl;
 
 
@@ -32,13 +33,29 @@ public getParaRight() {
 getParaRightDesc(){
   var ParasRightDesc="ParaRights/Desc";
   //TODO: Description instead of Desc
+
+  
+  var LogButtonColor="ParaRights/LogButtonColor";
+  const params = new HttpParams()
+  .set('buttonColor', this.btnColor)
+
+  const headers = new HttpHeaders()
+    .append(
+      'Content-Type',
+      'application/json'
+    );
+  this.http.post(`${this.baseUrl}/${LogButtonColor}`, {params}, {
+    headers: headers,
+    params: params,
+  }).subscribe();
+
   return this.http.get(`${this.baseUrl}/${ParasRightDesc}`,{responseType:"text"} );
 
 }
 
 refreshList(){
   var ini="Paras/Initialize";
-  return this.http.delete(`${this.baseUrl}/${ini}`);
+  return this.http.delete(`${this.baseUrl}/${ini}`,{responseType:"text"} );
 }
 
 movePara(){
